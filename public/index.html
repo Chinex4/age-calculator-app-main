@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nex Age Calculator</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="antialiased">
+    <div class="w-full min-h-screen bg-lightgray md:grid md:place-items-center px-5 py-24 md:py-0">
+        <div class="w-full md:w-[600px] bg-white rounded-xl rounded-br-[90px] py-12 px-5 md:px-10 space-y-11">
+            <div class="w-full flex space-x-3">
+                <div >
+                    <form class="flex flex-col space-y-1" action="">
+                        <label for="day" class="font-bold text-xs tracking-widest text-smokeygray">DAY</label>
+                        <input type="number" placeholder="DD"
+                            class="day w-[85px] md:w-[100px] rounded-md px-2 py-2 md:px-3 md:py-3 font-bold border border-smokeygray hover:border-mypurple focus:outline-none">
+                        <p class="error-day text-[12px] md:text-xs text-lightred"></p>
+                    </form>
+                </div>
+                <div >
+                    <form class="flex flex-col space-y-1" action="">
+                        <label for="day" class="font-bold text-xs tracking-widest text-smokeygray">MONTH</label>
+                        <input type="number" placeholder="MM"
+                            class="month w-[85px] md:w-[100px] rounded-md px-2 py-2 md:px-3 md:py-3 font-bold border border-smokeygray hover:border-mypurple focus:outline-none">
+                        <p class="error-month text-[12px] md:text-xs text-lightred"></p>
+                    </form>
+                </div>
+                <div >
+                    <form class="flex flex-col space-y-1" action="">
+                        <label for="day" class="font-bold text-xs tracking-widest text-smokeygray">YEAR</label>
+                        <input type="number" placeholder="YYYY"
+                            class="year w-[85px] md:w-[100px] rounded-md px-2 py-2 md:px-3 md:py-3 font-bold border border-smokeygray hover:border-mypurple focus:outline-none">
+                        <p class="error-year text-[12px] md:text-xs text-lightred"></p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="w-full flex justify-center md:justify-end items-center ">
+                <hr class="border border-smokeygray w-full">
+                <a href="#" class="submit w-12 h-12 md:w-20 md:h-20 absolute grid place-items-center rounded-full bg-mypurple hover:bg-offblack">
+                    <img src="images/icon-arrow.svg" class="w-6 h-6 md:w-10 md:h-10" alt="">
+                </a>
+            </div>
+
+            <div class="text-5xl font-extrabold italic">
+                <p><span class="year-output text-mypurple">--</span> years</p>
+                <p><span class="month-output text-mypurple">--</span> months</p>
+                <p><span class="day-output text-mypurple">--</span> days</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
